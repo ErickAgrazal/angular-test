@@ -1,0 +1,53 @@
+:host {
+    // Using grids to display CSS
+    display: grid;
+    grid-template-columns: minmax(254px, auto) 6fr;
+    grid-gap: 1rem;
+    align-items: center;
+    main {
+        margin-top: -3rem;
+        display: contents;
+        place-items: center;
+        img {
+            grid-column: 1 / 2;
+            min-width: 254px;
+            width: 100%;
+        }
+        h1 {
+            grid-column: 2 / 3;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 72pt;
+            color: #112433;
+            text-transform: uppercase;
+            line-height: 85%;
+            word-spacing: 100vw;
+        }
+    }
+    nav {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14pt;
+        text-transform: uppercase;
+        display: contents;
+        ul {
+            grid-column: 2 / 3;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            li {
+                float: left;
+                margin-right: 4rem;
+                a {
+                    color: #112433;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #359b79;
+                }   
+            }
+        }
+    }
+}
