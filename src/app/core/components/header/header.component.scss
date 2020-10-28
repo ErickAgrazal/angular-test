@@ -1,53 +1,48 @@
-:host {
-    // Using grids to display CSS
-    display: grid;
-    grid-template-columns: minmax(254px, auto) 6fr;
-    grid-gap: 1rem;
-    align-items: center;
-    main {
-        margin-top: -3rem;
-        display: contents;
-        place-items: center;
-        img {
-            grid-column: 1 / 2;
-            min-width: 254px;
-            width: 100%;
-        }
-        h1 {
-            grid-column: 2 / 3;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 72pt;
-            color: #112433;
-            text-transform: uppercase;
-            line-height: 85%;
-            word-spacing: 100vw;
-        }
-    }
-    nav {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14pt;
-        text-transform: uppercase;
-        display: contents;
-        ul {
-            grid-column: 2 / 3;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            li {
-                float: left;
-                margin-right: 4rem;
-                a {
-                    color: #112433;
-                    display: block;
-                    text-align: center;
-                    text-decoration: none;
-                }
-                a:hover {
-                    color: #359b79;
-                }   
-            }
-        }
-    }
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+}
+
+.header img {
+    flex-basis: 250px;
+    max-height: 242px;
+    min-width: 250px;
+}
+
+.header .title-nav {
+    margin-left: 2rem;
+}
+
+.header .title-nav h1 {
+    font-size: 72pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #112433;
+}
+
+.navigation {
+    color: #112433;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+
+.navigation ul li {
+    margin-right: 5rem;
 }
